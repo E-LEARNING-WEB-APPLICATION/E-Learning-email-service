@@ -1,11 +1,14 @@
-﻿<h2>Hi {{userName}},</h2>
+﻿<h2>Course Purchased Successfully 🎓</h2>
 
-<p>You have successfully purchased:</p>
+<p>Hi {{studentName}},</p>
 
-<p><b>{{courseTitle}}</b></p>
+<p>You have successfully purchased the course:</p>
 
-<p>Amount Paid: ₹{{amount}}</p>
+<ul>
+    <li><strong>Course:</strong> {{courseTitle}}</li>
+    <li><strong>Amount Paid:</strong> {{pricePaid}} {{currency}}</li>
+    <li><strong>Purchase Time:</strong> {{purchaseTime}}</li>
+    <li><strong>Booking ID:</strong> {{bookingId}}</li>
+</ul>
 
-<p>Purchase Date: {{purchaseDate}}</p>
-
-<p>Happy Learning! 🎉</p>
+<p>You can now access the course from your dashboard.</p>
