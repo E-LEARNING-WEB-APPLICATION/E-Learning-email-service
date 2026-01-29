@@ -25,9 +25,14 @@ namespace EmailService.Services.Impl
 
             string templateFile = email.EventType switch
             {
-                "SIGN_IN_OTP" => "otp.txt",
+                "SIGN_IN_OTP" => "sign-in-otp.html",
                 "COURSE_PURCHASED" => "course-purchased.html",
                 "INSTRUCTOR_APPROVED" => "instructor-approved.html",
+                "INSTRUCTOR_APPROVAL_PENDING" => "instructor-approval-pending.html",
+                "INSTRUCTOR_PAYOUT" => "instructor-payout.html",
+                "PASSWORD_CHANGED" => "password-changed.html",
+                "PAYMENT_SUCCESS" => "payment-success.html",
+                "PAYMENT_FAILED" => "payment-failed.html",
                 _ => throw new Exception("Unknown event type")
             };
 
