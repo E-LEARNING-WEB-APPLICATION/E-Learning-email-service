@@ -1,20 +1,24 @@
 ﻿using System.Collections.Generic;
+using System.Text.Json.Serialization;
 namespace EmailService.DTO
 {
+
     public class EmailEvent
     {
+        [JsonPropertyName("eventType")]
+        public string EventType { get; set; }
 
-        public String EventType { get; set; }
+        [JsonPropertyName("to")]
+        public List<string> To { get; set; }
 
-        public List<String> To { get; set; }
+        [JsonPropertyName("subject")]
+        public string Subject { get; set; }
 
-        public String Subject { get; set; }
+        [JsonPropertyName("data")]
+        public Dictionary<string, object> Data { get; set; }
 
-        public Dictionary<String, Object> Data { get; set; }
-
-        //private List<EmailAttachment> attachments;
-
-        public Dictionary<String, Object> Meta { get; set; }
+        [JsonPropertyName("meta")]
+        public Dictionary<string, object> Meta { get; set; }
     }
 
 }
