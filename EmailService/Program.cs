@@ -1,3 +1,4 @@
+using EmailService.Config;
 using EmailService.Services;
 using EmailService.Services.Impl;
 
@@ -10,6 +11,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Configuration
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddEnvironmentVariables();
+
+builder.Services.Configure<SmtpConfig>(
+    builder.Configuration.GetSection("Smtp"));
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
