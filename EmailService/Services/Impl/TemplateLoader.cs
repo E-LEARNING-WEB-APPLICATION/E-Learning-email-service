@@ -12,6 +12,11 @@
 
         public void LoadAll()
         {
+            if (!Directory.Exists(_basePath))
+            {
+                throw new DirectoryNotFoundException($"Templates folder not found at: {_basePath}");
+            }
+
             var files = Directory.GetFiles(_basePath);
 
             foreach (var file in files)
