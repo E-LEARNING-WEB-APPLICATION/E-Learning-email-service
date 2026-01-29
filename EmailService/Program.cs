@@ -35,7 +35,7 @@ var app = builder.Build();
 //    app.MapOpenApi();
 //}
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
