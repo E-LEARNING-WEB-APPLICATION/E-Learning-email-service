@@ -33,6 +33,20 @@
 
             throw new Exception($"Template not loaded: {name}");
         }
+
+        public string LoadByEventType(string eventType)
+        {
+            // Convention-based mapping
+            // COURSE_PURCHASED -> course-purchased.html
+            var fileName = eventType
+                .ToLower()
+                .Replace("_", "-") + ".html";
+
+            if (_cache.TryGetValue(fileName, out var template))
+                return template;
+
+            throw new Exception($"No template found for event type: {eventType}");
+        }
     }
 
 }

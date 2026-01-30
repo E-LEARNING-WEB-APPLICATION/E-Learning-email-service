@@ -17,6 +17,9 @@ namespace EmailService.DTO
         [JsonPropertyName("data")]
         public Dictionary<string, object> Data { get; set; }
 
+        [JsonPropertyName("attachments")]
+        public Dictionary<string, string>? Attachments { get; set; }
+
         [JsonPropertyName("meta")]
         public Dictionary<string, object> Meta { get; set; }
     }

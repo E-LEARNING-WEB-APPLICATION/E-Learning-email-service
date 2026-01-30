@@ -22,7 +22,7 @@ example:
     "amount": 499,
     "purchaseDate": "2026-01-28"
   },
-  "attachments": [ //attachments currently not used
+  "attachments": [
     {
       "fileName": "receipt.pdf",
       "url": "https://storage/receipts/receipt-123.pdf"
@@ -50,6 +50,9 @@ emailClient.sendEmail(
             "currency", booking.getCurrency(),
             "purchaseTime", booking.getPurchaseTime(),
             "bookingId", booking.getId()
+        ))
+        .attachemnts(Map.of(
+          "booking_invoice.pdf", booking.getInvoiceUrl()
         ))
                 .build()
 );
