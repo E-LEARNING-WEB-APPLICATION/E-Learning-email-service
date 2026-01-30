@@ -37,6 +37,7 @@ namespace EmailService.Services.Impl
                 "PASSWORD_CHANGED" => "password-changed.html",
                 "PAYMENT_SUCCESS" => "payment-success.html",
                 "PAYMENT_FAILED" => "payment-failed.html",
+                "EMAIL_VERIFICATION" => "email-verification.html",
                 _ => throw new ArgumentException("Unknown event type")
             };
 
