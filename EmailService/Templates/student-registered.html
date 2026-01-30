@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to {{platformName}}</title>
+</head>
+
+<body style="
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="padding: 24px 0;">
+    <tr>
+        <td align="center">
+
+            <!-- Card -->
+            <table width="100%" cellpadding="0" cellspacing="0" style="
+                max-width: 600px;
+                background-color: #ffffff;
+                border-radius: 14px;
+                box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+                overflow: hidden;
+            ">
+
+                <!-- Header -->
+                <tr>
+                    <td style="
+                        background: linear-gradient(135deg, #1976d2, #0d47a1);
+                        padding: 28px;
+                        text-align: center;
+                        color: #ffffff;
+                    ">
+                        <div style="
+                            font-size: 22px;
+                            font-weight: 700;
+                            letter-spacing: 0.4px;
+                        ">
+                            {{platformName}}
+                        </div>
+
+                        <p style="
+                            margin: 8px 0 0;
+                            font-size: 14px;
+                            opacity: 0.9;
+                        ">
+                            Learn. Grow. Succeed.
+                        </p>
+                    </td>
+                </tr>
+
+                <!-- Content -->
+                <tr>
+                    <td style="padding: 28px; color: #333333;">
+
+                        <h2 style="
+                            margin-top: 0;
+                            font-size: 20px;
+                            font-weight: 600;
+                        ">
+                            🎉 Welcome, {{firstName}}!
+                        </h2>
+
+                        <p style="
+                            font-size: 15px;
+                            line-height: 1.6;
+                            margin-bottom: 18px;
+                        ">
+                            Your registration was successful! We’re excited to have you join
+                            <strong>{{platformName}}</strong>.
+                        </p>
+
+                        <!-- Info Card -->
+                        <table width="100%" cellpadding="0" cellspacing="0" style="
+                            background-color: #f8fafc;
+                            border-radius: 10px;
+                            padding: 16px;
+                            margin-bottom: 22px;
+                        ">
+                            <tr>
+                                <td>
+                                    <p style="
+                                        margin: 0 0 6px;
+                                        font-size: 13px;
+                                        color: #666;
+                                    ">
+                                        Registered Email
+                                    </p>
+                                    <p style="
+                                        margin: 0;
+                                        font-size: 15px;
+                                        font-weight: 500;
+                                    ">
+                                        {{email}}
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+
+                        <p style="
+                            font-size: 14px;
+                            line-height: 1.6;
+                            margin-bottom: 22px;
+                        ">
+                            You can now browse courses, enroll in programs, and start learning
+                            at your own pace.
+                        </p>
+
+                        <!-- CTA -->
+                        <div style="text-align: center; margin-bottom: 28px;">
+                            <a href="{{dashboardUrl}}" style="
+                                display: inline-block;
+                                padding: 14px 28px;
+                                background-color: #1976d2;
+                                color: #ffffff;
+                                text-decoration: none;
+                                border-radius: 28px;
+                                font-size: 14px;
+                                font-weight: 500;
+                                box-shadow: 0 4px 12px rgba(25,118,210,0.3);
+                            ">
+                                Go to Dashboard
+                            </a>
+                        </div>
+
+                        <!-- Tips -->
+                        <div style="
+                            background-color: #eef4ff;
+                            padding: 14px;
+                            border-radius: 8px;
+                            font-size: 13px;
+                            color: #444;
+                            margin-bottom: 24px;
+                        ">
+                            💡 <strong>Tip:</strong> Complete your profile and explore recommended
+                            courses to get the best learning experience.
+                        </div>
+
+                        <!-- Footer -->
+                        <p style="
+                            font-size: 12px;
+                            color: #777;
+                            text-align: center;
+                            line-height: 1.5;
+                        ">
+                            Need help? Contact us at
+                            <a href="mailto:{{supportEmail}}" style="
+                                color: #1976d2;
+                                text-decoration: none;
+                            ">
+                                {{supportEmail}}
+                            </a>
+                        </p>
+
+                        <p style="
+                            font-size: 12px;
+                            color: #aaa;
+                            text-align: center;
+                            margin-top: 10px;
+                        ">
+                            © {{year}} {{platformName}}. All rights reserved.
+                        </p>
+
+                    </td>
+                </tr>
+
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

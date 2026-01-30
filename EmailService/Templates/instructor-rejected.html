@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>Instructor Application Approved</title>
+    <title>Instructor Application Update</title>
 
     <style>
         body {
@@ -24,7 +24,7 @@
         }
 
         .header {
-            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            background: linear-gradient(135deg, #d32f2f, #b71c1c);
             color: #ffffff;
             padding: 24px;
             text-align: center;
@@ -59,52 +59,21 @@
         }
 
         .status-box {
-            background-color: #ecfdf5;
-            border-left: 4px solid #2e7d32;
+            background-color: #fef2f2;
+            border-left: 4px solid #d32f2f;
             padding: 14px;
             border-radius: 8px;
             font-size: 13px;
             margin: 20px 0;
         }
 
-        .features {
+        .info-box {
+            background-color: #f1f5f9;
+            border-left: 4px solid #64748b;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 13px;
             margin: 20px 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .features li {
-            margin-bottom: 10px;
-            padding-left: 26px;
-            position: relative;
-        }
-
-        .features li::before {
-            content: "✔";
-            position: absolute;
-            left: 0;
-            color: #2e7d32;
-            font-weight: bold;
-        }
-
-        .cta {
-            text-align: center;
-            margin: 28px 0;
-        }
-
-        .cta a {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: #2e7d32;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 24px;
-            font-size: 14px;
-        }
-
-        .cta a:hover {
-            background-color: #1b5e20;
         }
 
         .footer {
@@ -116,7 +85,7 @@
         }
 
         .footer a {
-            color: #2e7d32;
+            color: #d32f2f;
             text-decoration: none;
         }
 
@@ -139,7 +108,7 @@
     <!-- Header -->
     <div class="header">
         <div class="logo">{{platformName}}</div>
-        <h1>Instructor Application Approved 🎉</h1>
+        <h1>Instructor Application Update</h1>
     </div>
 
     <!-- Content -->
@@ -147,53 +116,48 @@
         <h2>Hello {{instructorName}},</h2>
 
         <p>
-            Great news! We’re happy to inform you that your instructor profile on
-            <strong>{{platformName}}</strong> has been <strong>approved</strong>.
+            Thank you for your interest in becoming an instructor on
+            <strong>{{platformName}}</strong>.
         </p>
 
         <div class="status-box">
-            <strong>Status:</strong> Approved <br/>
-            You now have full access to instructor features.
+            <strong>Status:</strong> Rejected <br/>
+            After careful review, we’re unable to approve your instructor application at this time.
         </div>
 
         <p>
-            You can now start creating and publishing courses, engaging with learners,
-            and sharing your expertise with students across the platform.
+            This decision may be based on factors such as profile completeness, experience alignment,
+            or current platform requirements. Please note that this is not a reflection of your
+            overall expertise or potential.
         </p>
 
-        <ul class="features">
-            <li>Create and publish courses</li>
-            <li>Upload lessons, videos, and assignments</li>
-            <li>Manage enrollments and student engagement</li>
-            <li>Track performance and feedback</li>
-        </ul>
-
-        <div class="cta">
-            <a href="{{instructorDashboardUrl}}">
-                Access Instructor Dashboard
-            </a>
+        <div class="info-box">
+            <strong>What you can do next:</strong><br/>
+            You’re welcome to update your profile and reapply in the future once the required criteria
+            are met. Our team regularly reviews new applications.
         </div>
 
         <p>
-            If you have any questions or need help getting started, feel free to contact us at
-            <a href="mailto:{{supportEmail}}">{{SupportEmail}}</a>.
+            If you believe this decision was made in error or if you’d like feedback on your application,
+            feel free to contact us at
+            <a href="mailto:{{supportEmail}}">{{supportEmail}}</a>.
         </p>
 
         <p>
-            We’re excited to have you as an instructor and can’t wait to see the learning
-            experiences you create.
+            We appreciate the time and effort you put into applying and wish you the very best
+            in your teaching journey.
         </p>
 
         <p>
-            Warm regards,<br/>
-            <strong>{{PlatformName}} Team</strong>
+            Kind regards,<br/>
+            <strong>{{platformName}} Team</strong>
         </p>
     </div>
 
     <!-- Footer -->
     <div class="footer">
         © {{year}} {{platformName}}. All rights reserved.<br/>
-        You are receiving this email because your instructor account was approved.
+        You are receiving this email because you applied for an instructor account on {{platformName}}.
     </div>
 
 </div>
