@@ -1,14 +1,224 @@
-﻿<h2>Course Purchased Successfully 🎓</h2>
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Purchase Confirmation</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f8;
+      font-family:
+        -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Arial,
+        sans-serif;
+    "
+  >
+    <table
+      width="100%"
+      cellpadding="0"
+      cellspacing="0"
+      style="background-color: #f4f6f8; padding: 24px 0"
+    >
+      <tr>
+        <td align="center">
+          <!-- Card -->
+          <table
+            width="100%"
+            cellpadding="0"
+            cellspacing="0"
+            style="
+              max-width: 600px;
+              background-color: #ffffff;
+              border-radius: 12px;
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+              overflow: hidden;
+            "
+          >
+            <!-- Header -->
+            <tr>
+              <td
+                style="
+                  background: linear-gradient(135deg, #1976d2, #1565c0);
+                  color: #ffffff;
+                  padding: 28px 24px 24px;
+                  text-align: center;
+                "
+              >
+                <!-- Logo Text -->
+                <div
+                  style="
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 1.5px;
+                    text-transform: uppercase;
+                    margin-bottom: 8px;
+                    opacity: 0.95;
+                  "
+                >
+                  {{platformName}}
+                </div>
 
-<p>Hi {{studentName}},</p>
+                <!-- Divider -->
+                <div
+                  style="
+                    width: 40px;
+                    height: 2px;
+                    background-color: rgba(255, 255, 255, 0.6);
+                    margin: 8px auto 16px;
+                    border-radius: 2px;
+                  "
+                ></div>
 
-<p>You have successfully purchased the course:</p>
+                <h1 style="margin: 0; font-size: 22px; font-weight: 600">
+                  🎓 Course Purchased Successfully
+                </h1>
 
-<ul>
-    <li><strong>Course:</strong> {{courseTitle}}</li>
-    <li><strong>Amount Paid:</strong> {{pricePaid}} {{currency}}</li>
-    <li><strong>Purchase Time:</strong> {{purchaseTime}}</li>
-    <li><strong>Booking ID:</strong> {{bookingId}}</li>
-</ul>
+                <p style="margin: 8px 0 0; font-size: 14px; opacity: 0.9">
+                  Welcome to your learning journey
+                </p>
+              </td>
+            </tr>
 
-<p>You can now access the course from your dashboard.</p>
+            <!-- Content -->
+            <tr>
+              <td style="padding: 24px; color: #333333">
+                <p style="font-size: 15px; margin: 0 0 16px">
+                  Hi <strong>{{studentFullName}}</strong>,
+                </p>
+
+                <p style="font-size: 14px; margin: 0 0 20px; line-height: 1.6">
+                  Thank you for your purchase! Your enrollment has been
+                  confirmed and you can now access the course from your
+                  dashboard.
+                </p>
+
+                <!-- Course Card -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  style="
+                    background-color: #f8fafc;
+                    border-radius: 10px;
+                    padding: 16px;
+                    margin-bottom: 20px;
+                  "
+                >
+                  <tr>
+                    <td>
+                      <p style="margin: 0 0 8px; font-size: 13px; color: #666">
+                        Course
+                      </p>
+                      <p style="margin: 0; font-size: 16px; font-weight: 600">
+                        {{courseTitle}}
+                      </p>
+
+                      <p style="margin: 6px 0 0; font-size: 13px; color: #555">
+                        Instructor: {{instructorName}}
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Purchase Summary -->
+                <table
+                  width="100%"
+                  cellpadding="0"
+                  cellspacing="0"
+                  style="margin-bottom: 20px"
+                >
+                  <tr>
+                    <td style="font-size: 14px; padding: 6px 0">Amount Paid</td>
+                    <td align="right" style="font-size: 14px; font-weight: 600">
+                      {{amountPaid}} {{currency}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-size: 14px; padding: 6px 0">
+                      Invoice Number
+                    </td>
+                    <td align="right" style="font-size: 14px">
+                      {{invoiceNumber}}
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-size: 14px; padding: 6px 0">
+                      Purchase Date
+                    </td>
+                    <td align="right" style="font-size: 14px">
+                      {{invoiceDate}}
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Invoice Note -->
+                <p
+                  style="
+                    font-size: 13px;
+                    color: #555;
+                    background-color: #eef4ff;
+                    padding: 12px;
+                    border-radius: 8px;
+                    margin-bottom: 20px;
+                  "
+                >
+                  📄 Your invoice is attached to this email for your records.
+                </p>
+
+                <!-- CTA -->
+                <div style="text-align: center; margin-bottom: 24px">
+                  <a
+                    href="{{dashboardUrl}}"
+                    style="
+                      display: inline-block;
+                      padding: 12px 24px;
+                      background-color: #1976d2;
+                      color: #ffffff;
+                      text-decoration: none;
+                      border-radius: 24px;
+                      font-size: 14px;
+                      font-weight: 500;
+                    "
+                  >
+                    Go to Dashboard
+                  </a>
+                </div>
+
+                <!-- Footer -->
+                <p
+                  style="
+                    font-size: 12px;
+                    color: #777;
+                    text-align: center;
+                    line-height: 1.5;
+                  "
+                >
+                  If you have any questions, contact us at
+                  <a
+                    href="mailto:{{platformEmail}}"
+                    style="color: #1976d2; text-decoration: none"
+                  >
+                    {{platformEmail}}
+                  </a>
+                </p>
+
+                <p
+                  style="
+                    font-size: 12px;
+                    color: #aaa;
+                    text-align: center;
+                    margin-top: 12px;
+                  "
+                >
+                  © {{platformName}}
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
