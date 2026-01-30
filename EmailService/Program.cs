@@ -27,6 +27,7 @@ builder.Services.AddSwaggerGen(); // Adds the Swagger generator service
 
 builder.Services.AddSingleton<TemplateLoader>();
 builder.Services.AddHostedService<TemplateCacheWarmupService>();
+builder.Services.AddHttpClient();
 // Email sending
 builder.Services.AddTransient<IEmailSender, SmtpEmailSender>();
 
