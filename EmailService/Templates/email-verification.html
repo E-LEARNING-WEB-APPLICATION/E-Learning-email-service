@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Verify Your Email</title>
+
+    <!-- Dark mode support -->
+    <meta name="color-scheme" content="light dark">
+    <meta name="supported-color-schemes" content="light dark">
+</head>
+
+<body style="
+  margin:0;
+  padding:0;
+  background-color:#0f172a;
+  font-family:Arial, Helvetica, sans-serif;
+">
+
+<table width="100%" cellpadding="0" cellspacing="0" style="padding:24px;">
+    <tr>
+        <td align="center">
+
+            <!-- Card -->
+            <table width="600" cellpadding="0" cellspacing="0" style="
+                background-color:#111827;
+                border-radius:14px;
+                box-shadow:0 10px 30px rgba(0,0,0,0.45);
+                padding:36px;
+            ">
+
+                <!-- Header -->
+                <tr>
+                    <td style="text-align:center; padding-bottom:28px;">
+                        <h2 style="
+                            margin:0;
+                            color:#e5e7eb;
+                            font-size:24px;
+                            letter-spacing:0.3px;
+                        ">
+                            📧 Verify Your Email
+                        </h2>
+                    </td>
+                </tr>
+
+                <!-- Body -->
+                <tr>
+                    <td style="
+                        color:#d1d5db;
+                        font-size:15px;
+                        line-height:1.7;
+                    ">
+
+                        <p>
+                            Thank you for registering with <strong style="color:#f9fafb;">LearnEase</strong>.
+                        </p>
+
+                        <p>
+                            Please use the OTP below to verify your email address.
+                        </p>
+
+                        <!-- OTP Box -->
+                        <div style="
+                            margin:28px 0;
+                            padding:22px;
+                            border-radius:10px;
+                            background:linear-gradient(135deg, #1e293b, #020617);
+                            border:1px solid #334155;
+                            text-align:center;
+                        ">
+                            <p style="
+                                margin:0 0 10px 0;
+                                font-size:14px;
+                                color:#9ca3af;
+                            ">
+                                Email Verification OTP
+                            </p>
+
+                            <p style="
+                                margin:0;
+                                font-size:30px;
+                                font-weight:bold;
+                                letter-spacing:6px;
+                                color:#38bdf8;
+                            ">
+                                {{otp}}
+                            </p>
+
+                            <p style="
+                                margin-top:12px;
+                                font-size:13px;
+                                color:#94a3b8;
+                            ">
+                                Valid for <strong>{{validForMinutes}} minutes</strong>
+                            </p>
+                        </div>
+
+                        <p style="color:#fca5a5; font-weight:bold;">
+                            ⚠️ Do not share this OTP with anyone.
+                        </p>
+
+                        <p>
+                            If you did not initiate this request, you can safely ignore this email.
+                        </p>
+
+                    </td>
+                </tr>
+
+                <!-- Footer -->
+                <tr>
+                    <td style="
+                        padding-top:28px;
+                        border-top:1px solid #334155;
+                        color:#9ca3af;
+                        font-size:12px;
+                        text-align:center;
+                    ">
+                        <p style="margin:0;">
+                            This is an automated message. Please do not reply.<br />
+                            © 2026 LearnEase. All rights reserved.
+                        </p>
+                    </td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
