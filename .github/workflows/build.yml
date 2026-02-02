@@ -31,9 +31,9 @@ jobs:
       - name: Build Docker image
         run: |
           docker build \
-            -t yourname/email-service:latest \
+            -t gandhiomkar/email-service:${{ github.sha }} \
             -f EmailService/Dockerfile \
             EmailService
 
       - name: Push Docker image
-        run: docker push yourname/email-service:latest
+        run: docker push gandhiomkar/email-service:${{ github.sha }}
